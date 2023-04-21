@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+    <div id="header">
+        <div class="contanier">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>I AM STUDENT</p>
+                <h1>Hi' I'M <span>PRAKASH</span><br>KUMAR </h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic03.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum voluptates, aspernatur nam minima in illum perferendis, quo doloremque quos nostrum explicabo adipisci laudantium, reprehenderit maxime autem repudiandae dicta inventore dolor sed rerum modi temporibus incidunt maiores voluptate. Nostrum, magnam officiis, totam necessitatibus autem reiciendis dolorum ipsam iusto asperiores laudantium impedit ut accusamus ab cumque fuga. Fugit amet impedit nihil voluptate.</p>
+                    <div class="tab-tittle">
+                        <p class="tab-link active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">experience</p>
+                        <p class="tab-link" onclick="opentab('eduction')">eduction</p>
+                    </div>
+                <div class="tab-contents active-tab"  id="skills">
+                    <ul>
+                        <li><span>I'am a</span><br>Devepoler</li>
+                        <li><span>Basic knowledge of</span><br>C++,C</li>
+                        <li><span>I"M intrested in </span><br>Trading</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="experience">
+                    <ul>
+                        <li><span>No exprience</span><br>pursuing from Hi-Tech Institute of Engineering & Technology </li>
+                        <li><span>online course from youtube</span><br>C++,C,HTML,CSS</li>
+                        <li><span>I" Improve my skill </span><br>Every Minute</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="eduction">
+                    <ul>
+                        <li><span>2017-2018</span><br>10th pass out</li>
+                        <li><span>2019-2020</span><br>12th pass out </li>
+                        <li><span>after 2020</span><br>i pursuing my B.tech(computer science)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablink=document.getElementsByClassName("tab-links");
+        var tablink=document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname){
+            for(tablink of tablink){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classlist.remove("active-tab");
+            }
+        }
+    </script>
+    
+</body>
+</html>
